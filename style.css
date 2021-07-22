@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header,
+ul,
+main,
+section,
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header, footer {
+  width: 100%;
+  background-color: #444444;
+  color: #818181;
+}
+
+header {
+  height: 100px;
+}
+
+header img {
+  margin-right: 30px;
+}
+
+ul {
+  width: 730px;
+  justify-content: left;
+}
+
+li {
+  margin-right: 100px;
+}
+
+main {
+  /* display: grid;
+  grid-template:
+    "head head head" 30px
+    "" 30px
+    "nav  foot" 30px
+    / 120px 1fr;
+  gap: 30px; */
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 15px 0;
+}
+
+main img, article {
+  margin: 15px;
+}
+
+article {
+  width: 450px;
+  max-height: 400px;
+}
+
+h3 {
+  font-weight: bolder;
+}
+
+article p {
+  overflow: scroll;
+  max-height: 345px;
+  margin: 5px 0;
+}
+
+button {
+  width: 125px;
+  height: 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+
+button:hover {
+  color: deeppink;
+  background-color: white;
+  animation: huey 0.35s linear infinite;
+  box-shadow: 0px 0px 10px 5px currentColor;
+}
+
+@keyframes huey {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+footer {
+  height: 150px;
+}
